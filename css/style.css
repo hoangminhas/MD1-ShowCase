@@ -1,0 +1,15 @@
+h1{
+    text-align: center;
+    font-family: 'Shizuru', cursive;
+}
+
+#myCanvas{
+    box-shadow: 10px 5px 20px 10px red;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(290deg, cadetblue, coral);
+    height: 100vh;
+}
