@@ -20,8 +20,4 @@ export default class Player{
         ctx.drawImage(this._player, this._x, this._y, this._tileSize, this._tileSize);
     }
 
-   moving(x, y){
-
-   }
-
 }

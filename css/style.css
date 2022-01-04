@@ -13,3 +13,7 @@ body{
     background: linear-gradient(290deg, cadetblue, coral);
     height: 100vh;
 }
+
+#dice-zone {
+    position: fixed;
+}

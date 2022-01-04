@@ -16,7 +16,7 @@ export default class Map {
         return img;
     }
 
-    // * - wall
+    // 1 - wall
     // 0 - roadcell
     // 2 - player
     // 3 - trap
@@ -52,7 +52,7 @@ export default class Map {
                 const tile = this.map[row][col];
                 let image = null;
                 switch (tile) {
-                    case '*':
+                    case 1:
                         image = this._wall;
                         break;
                     // case 2:
@@ -93,15 +93,15 @@ export default class Map {
         }
     }
 
-    checkDice(dice, player){
-        let random = dice.roll();
-        for(let i=0; i<this.map.length; i++){
-            for (let j=0; i<this.map[i].length; j++){
-
-            }
-        }
-
-    }
+    // checkMove(dice, player){
+    //     let random = dice.roll();
+    //     for(let i=0; i<this.map.length; i++){
+    //         for (let j=0; i<this.map[i].length; j++){
+    //
+    //         }
+    //     }
+    //
+    // }
 
     #clearCanvas(canvas, ctx) {
         ctx.fillStyle = 'black';
@@ -112,4 +112,5 @@ export default class Map {
         canvas.height = this.map.length * this._tileSize;
         canvas.width = this.map[0].length * this._tileSize;
     }
+
 }

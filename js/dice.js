@@ -44,22 +44,18 @@ export default class Dice {
         switch (random){
             case 1:
                 return this.side1;
-                break;
             case 2:
                 return this.side2;
-                break;
             case 3:
                 return this.side3;
-                break;
             case 4:
                 return this.side4;
-                break;
             case 5:
                 return this.side5;
-                break;
             case 6:
                 return this.side6;
-                break;
         }
     }
+
+
 }

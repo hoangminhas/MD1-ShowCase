@@ -12,10 +12,18 @@ const map1 = new Map(tileSize);
 const player = map1.getPlayer(velocity);
 const dice1 = new Dice();
 
+
+// export function showDice() {
+//     console.log('ád');
+//     let kq = document.getElementById('result');
+//     let random = dice1.roll();
+//     kq.innerHTML = "Ket qua: " + random;
+// }
+
 function gameLoop() {
     map1.draw(canvas, ctx);
     player.draw(ctx);
-    map1.checkDice(dice1, player);
+
 }
 
-setInterval(gameLoop, 1000 / 60);
+setInterval(gameLoop, 1000/60);
